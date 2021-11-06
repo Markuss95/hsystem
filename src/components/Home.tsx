@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import solars from "../assets/pexels-tom-fisk-9893729.jpg";
+import solars from "../assets/pexels-tom-fisk-9893729 (1).jpg";
 import logo from "../assets/H System logo.png";
 
 const navbarVariants = {
@@ -30,7 +30,7 @@ const Home = () => {
           <h3>Careers</h3>
         </div>
         <div className="menu">
-          <h3>Meni</h3>
+          <p>Meni</p>
         </div>
       </motion.div>
     </Wrapper>
@@ -40,8 +40,8 @@ const Home = () => {
 const Wrapper = styled.div`
   position: relative;
   h3 {
-    font-size: 1.3rem;
-    color: white;
+    font-size: 1.2rem;
+    color: #fff;
   }
   .background-img {
     position: absolute;
@@ -59,15 +59,22 @@ const Wrapper = styled.div`
   .navbar-list {
     position: relative;
     display: flex;
-    margin-right: 4.5rem;
+    margin-right: 6rem;
     margin-top: 1.5rem;
-    margin-left: 1rem;
+
     gap: 2rem;
   }
   .logo-img {
     position: relative;
     left: 5%;
     top: 0.5%;
+  }
+  .menu {
+    position: absolute;
+    color: #fff;
+    font-size: 1.3rem;
+    top: 0.5rem;
+    right: 5%;
   }
 
   @media (max-width: 800px) {
