@@ -9,7 +9,7 @@ const navbarVariants = {
   },
   visible: {
     opacity: 1,
-    transition: { delay: 1.5, duration: 1.5 },
+    transition: { delay: 1, duration: 1.5 },
   },
 };
 
@@ -35,17 +35,13 @@ const Home = () => {
 };
 
 const Wrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
     padding-left: 2rem;
   }
   .background-img {
     position: absolute;
-    top: 0;
-    left: 0;
     height: 100vh;
     width: 100vw;
     object-fit: cover;
@@ -60,7 +56,7 @@ const Wrapper = styled.div`
     top: 25%;
     display: flex;
     justify-content: center;
-    padding-left: 3rem;
+    padding-left: 4rem;
     margin-right: 2rem;
   }
   .logo-img {
