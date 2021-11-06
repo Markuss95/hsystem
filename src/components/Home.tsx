@@ -1,14 +1,14 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <Wrapper>
-      <p>Hello</p>
+      <h1>Hello</h1>
     </Wrapper>
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   height: 100vh;
   width: 100vw;
   display: flex;
