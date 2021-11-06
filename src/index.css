@@ -1,13 +1,80 @@
-body {
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background-color: #fafafa;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section-center {
+  width: 45rem;
+  max-width: 774px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid #dbdbdb;
+  font-size: 16px;
+  line-height: 24px;
+  width: 128px;
+  height: 40px;
+  border-radius: 36px;
+  padding: 0px 24px;
+  color: #383838;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.component-title {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 2.6rem;
+  color: #383838;
+}
+.box-wrapper {
+  position: relative;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message {
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0 auto;
 }
