@@ -29,35 +29,40 @@ const Home = () => {
           <h3>Sustainability</h3>
           <h3>Careers</h3>
         </div>
+        <div className="menu">
+          <h3>Meni</h3>
+        </div>
       </motion.div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  position: relative;
   h3 {
     font-size: 1.3rem;
     color: white;
-    padding-left: 2rem;
   }
   .background-img {
     position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
-    object-fit: cover;
   }
   .navbar {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
   .navbar-list {
     position: relative;
-    top: 25%;
     display: flex;
-    justify-content: center;
-    padding-left: 4rem;
-    margin-right: 2rem;
+    margin-right: 4.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    gap: 2rem;
   }
   .logo-img {
     position: relative;
@@ -65,8 +70,16 @@ const Wrapper = styled.div`
     top: 0.5%;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     .logo-img {
+      display: none;
+    }
+    .navbar-list {
+      display: none;
+    }
+  }
+  @media (min-width: 801px) {
+    .menu {
       display: none;
     }
   }
