@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import solars from "../assets/pexels-tom-fisk-9893729 (1).jpg";
-import logo from "../assets/H System logo.png";
+import logo from "../assets/LogoMakr-3ok5GN.png";
 
 const navbarVariants = {
   hidden: {
@@ -13,7 +14,7 @@ const navbarVariants = {
   },
 };
 
-const Home = () => {
+const Hero = () => {
   return (
     <Wrapper>
       <img className="background-img" src={solars} alt="Solar Pannels" />
@@ -23,7 +24,9 @@ const Home = () => {
         initial="hidden"
         animate="visible"
       >
-        <img className="logo-img" src={logo} alt="H System" />
+        <Link to="/">
+          <img className="logo-img" src={logo} alt="H System" />
+        </Link>
         <div className="navbar-list">
           <h3>Our company</h3>
           <h3>Sustainability</h3>
@@ -60,14 +63,13 @@ const Wrapper = styled.div`
     position: relative;
     display: flex;
     margin-right: 6rem;
-    margin-top: 1.5rem;
+    margin-top: 2.7rem;
 
     gap: 2rem;
   }
   .logo-img {
     position: relative;
-    left: 5%;
-    top: 0.5%;
+    left: 30%;
   }
   .menu {
     position: absolute;
@@ -91,4 +93,4 @@ const Wrapper = styled.div`
     }
   }
 `;
-export default Home;
+export default Hero;
