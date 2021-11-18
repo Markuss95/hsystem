@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import solars from "../assets/pexels-tom-fisk-9893729 (1).jpg";
+import solars from "../assets/pexels-andre-william-2104499 (2).jpg";
 import logo from "../assets/LogoMakr-3ok5GN.png";
+import waterDrop from "../assets/pexels-oleg-magni-2033981 (1).jpg";
 
 const navbarVariants = {
   hidden: {
@@ -10,7 +11,7 @@ const navbarVariants = {
   },
   visible: {
     opacity: 1,
-    transition: { delay: 1, duration: 1.5 },
+    transition: { delay: 1, duration: 1 },
   },
 };
 
@@ -18,6 +19,9 @@ const Hero = () => {
   return (
     <Wrapper>
       <img className="background-img" src={solars} alt="Solar Pannels" />
+      <div className="waterdrop-img-container">
+        <img className="waterdrop-img" src={waterDrop} alt="Waterdrop" />
+      </div>
       <motion.div
         className="navbar"
         variants={navbarVariants}
@@ -79,6 +83,20 @@ const Wrapper = styled.div`
     right: 5%;
   }
 
+  .waterdrop-img-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .waterdrop-img {
+    object-fit: cover;
+    position: relative;
+    height: 6em;
+    width: 6em;
+  }
   @media (max-width: 800px) {
     .logo-img {
       display: none;
