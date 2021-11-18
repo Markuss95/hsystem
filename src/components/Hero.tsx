@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -16,6 +17,13 @@ const navbarVariants = {
 };
 
 const Hero = () => {
+  const [scrollPos, setScrollPos] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => setScrollPos(window.pageYOffset));
+    }
+  }, []);
+  console.log(scrollPos);
   return (
     <Wrapper>
       <img className="background-img" src={solars} alt="Solar Pannels" />
@@ -46,6 +54,7 @@ const Hero = () => {
 
 const Wrapper = styled.div`
   position: relative;
+  max-width: 100vw;
   h3 {
     font-size: 1.2rem;
     color: #fff;
@@ -93,7 +102,7 @@ const Wrapper = styled.div`
   }
   .waterdrop-img {
     object-fit: cover;
-    position: relative;
+    position: fixed;
     height: 6em;
     width: 6em;
   }
