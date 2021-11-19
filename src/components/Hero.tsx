@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import solars from "../assets/pexels-andre-william-2104499 (2).jpg";
+import bcg from "../assets/pexels-andre-william-2104499 (2).jpg";
 import logo from "../assets/LogoMakr-3ok5GN.png";
 import waterDrop from "../assets/pexels-oleg-magni-2033981 (1).jpg";
 
@@ -16,17 +16,22 @@ const navbarVariants = {
   },
 };
 
-const Hero = () => {
-  const [scrollPos, setScrollPos] = useState(0);
+const Hero = ({
+  setScrollPos,
+}: {
+  setScrollPos: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => setScrollPos(window.pageYOffset));
+      window.addEventListener("scroll", () =>
+        setScrollPos(window.scrollY < 0.535 * window.innerHeight)
+      );
     }
-  }, []);
-  console.log(scrollPos);
+  });
+
   return (
     <Wrapper>
-      <img className="background-img" src={solars} alt="Solar Pannels" />
+      <img className="background-img" src={bcg} alt="Grass" />
       <div className="waterdrop-img-container">
         <img className="waterdrop-img" src={waterDrop} alt="Waterdrop" />
       </div>
@@ -54,7 +59,6 @@ const Hero = () => {
 
 const Wrapper = styled.div`
   position: relative;
-  max-width: 100vw;
   h3 {
     font-size: 1.2rem;
     color: #fff;
@@ -77,7 +81,6 @@ const Wrapper = styled.div`
     display: flex;
     margin-right: 6rem;
     margin-top: 2.7rem;
-
     gap: 2rem;
   }
   .logo-img {
@@ -103,8 +106,8 @@ const Wrapper = styled.div`
   .waterdrop-img {
     object-fit: cover;
     position: fixed;
-    height: 6em;
-    width: 6em;
+    height: 5rem;
+    width: 5rem;
   }
   @media (max-width: 800px) {
     .logo-img {
