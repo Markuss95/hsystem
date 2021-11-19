@@ -37,8 +37,8 @@ const Wrapper = styled.div`
     object-fit: cover;
     position: fixed;
     left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
+    top: 51%;
+    transform: translate(-51%, -50%);
     height: 8rem;
     width: 8rem;
   }
