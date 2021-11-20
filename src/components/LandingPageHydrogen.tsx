@@ -41,9 +41,9 @@ const Wrapper = styled.div`
   .hydrogen-img {
     object-fit: cover;
     position: fixed;
-    left: 50%;
+    left: 47%;
     top: 51%;
-    transform: translate(-50%, -51%);
+    transform: translate(-47%, -51%);
     height: 8rem;
     width: 8rem;
   }
@@ -51,9 +51,9 @@ const Wrapper = styled.div`
     object-fit: cover;
     position: fixed;
     margin-left: 4.5rem;
-    left: 50%;
+    left: 47%;
     top: 57%;
-    transform: translate(-50%, -57%);
+    transform: translate(-47%, -57%);
     height: 12rem;
     width: 12rem;
   }
@@ -61,6 +61,9 @@ const Wrapper = styled.div`
     .hydrogen-img {
       height: 13rem;
       width: 13rem;
+      left: 50%;
+      top: 51%;
+      transform: translate(-50%, -51%);
     }
     .two-img {
       height: 20rem;
