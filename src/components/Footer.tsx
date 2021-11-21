@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     left: 0;
     height: 20vh;
     width: 100vw;
-    background-color: #1c3a13;
+    background-color: #b4bde2;
   }
   .scroll-up-btn {
     position: absolute;
