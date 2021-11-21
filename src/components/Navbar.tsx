@@ -21,6 +21,7 @@ const Navbar = () => {
         <h3>Our Company</h3>
         <h3>Solar Energy Farm</h3>
         <h3>Sustainability</h3>
+        <h3>Contact</h3>
       </div>
       <div className="menu">
         <p>Meni</p>
