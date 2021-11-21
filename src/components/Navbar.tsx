@@ -18,10 +18,9 @@ const Navbar = () => {
         <img className="logo-img" src={logo} alt="H System" />
       </Link>
       <div className="navbar-list">
-        <h3>Our company</h3>
-        <h3>Solars</h3>
+        <h3>Our Company</h3>
+        <h3>Solar Energy Farm</h3>
         <h3>Sustainability</h3>
-        <h3>Careers</h3>
       </div>
       <div className="menu">
         <p>Meni</p>

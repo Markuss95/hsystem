@@ -17,6 +17,12 @@ const LandingPageHydrogen = ({ scrollPos }: { scrollPos: boolean }) => {
           alt="Two"
         />
       </div>
+      <div className="hydrogen-text-container">
+        <h3 className="hydrogen-text">
+          We use energy from the Sun to produce Hydrogen with zero emission of
+          CO2.
+        </h3>
+      </div>
     </Wrapper>
   );
 };
@@ -25,7 +31,7 @@ const Wrapper = styled.div`
   position: relative;
   height: 100vh;
   width: 100vw;
-  background: white;
+  background: #b4bde2;
 
   .hidden {
     display: none;
@@ -46,6 +52,18 @@ const Wrapper = styled.div`
     transform: translate(-47%, -51%);
     height: 8rem;
     width: 8rem;
+  }
+  .hydrogen-text-container {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+  .hydrogen-text {
+    color: white;
+    margin-left: 1rem;
+    font-size: 1rem;
   }
   .two-img {
     object-fit: cover;
@@ -72,6 +90,11 @@ const Wrapper = styled.div`
       left: 50%;
       top: 61%;
       transform: translate(-50%, -61%);
+    }
+    .hydrogen-text {
+      color: white;
+      font-size: 2rem;
+      margin-left: 2rem;
     }
   }
 `;
