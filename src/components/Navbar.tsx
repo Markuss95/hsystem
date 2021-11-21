@@ -30,9 +30,9 @@ const Navbar = () => {
 };
 
 const Wrapper = styled(motion.div)`
-  position: relative;
+  position: absolute;
   z-index: 1;
-  position: relative;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   h3 {

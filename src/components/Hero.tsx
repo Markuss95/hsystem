@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
 import bcg from "../assets/pexels-andre-william-2104499 (2).jpg";
 import waterDrop from "../assets/pexels-oleg-magni-2033981 (1).jpg";
 
@@ -23,7 +22,6 @@ const Hero = ({
       <div className="waterdrop-img-container">
         <img className="waterdrop-img" src={waterDrop} alt="Waterdrop" />
       </div>
-      <Navbar />
     </Wrapper>
   );
 };
