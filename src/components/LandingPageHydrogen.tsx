@@ -19,8 +19,8 @@ const LandingPageHydrogen = ({ scrollPos }: { scrollPos: boolean }) => {
       </div>
       <div className="hydrogen-text-container">
         <h3 className="hydrogen-text">
-          We use energy from the Sun to produce Hydrogen with zero emission of
-          CO2.
+          Our focuses are enviroment and energy. Using sun energy to produce
+          zero emission hydrogen is our mission.
         </h3>
       </div>
     </Wrapper>
