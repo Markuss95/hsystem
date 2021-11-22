@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-content-container">
         <div className="footer-content">
           <p>Our Company</p>
-          <p>Solar Energy Farm</p>
+          <p>Solar Energy</p>
           <p>Sustainability</p>
           <p>Contact</p>
         </div>
@@ -99,6 +99,9 @@ const Wrapper = styled.div`
       font-weight: 500;
       font-size: 0.8rem;
       padding-left: 0;
+    }
+    .scroll-up-btn {
+      padding-top: 0.2rem;
     }
   }
 `;

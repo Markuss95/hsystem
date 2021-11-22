@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import hydrogenStation from "../assets/HydrogenStation.jpg";
-import hydrogenStationTwo from "../assets/HydrogenStation2.jpg";
+import hydrogenStationTwo from "../assets/hydro33.jpg";
 const LandingPageStation = () => {
   return (
     <Wrapper>
