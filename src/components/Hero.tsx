@@ -11,7 +11,7 @@ const Hero = ({
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
-        setScrollPos(window.scrollY < 0.535 * window.innerHeight)
+        setScrollPos(window.scrollY < 0.553 * window.innerHeight)
       );
     }
   });
