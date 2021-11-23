@@ -5,8 +5,10 @@ import waterDrop from "../assets/pexels-oleg-magni-2033981 (1).jpg";
 
 const Hero = ({
   setScrollPos,
+  scrollPos,
 }: {
   setScrollPos: React.Dispatch<React.SetStateAction<boolean>>;
+  scrollPos: boolean;
 }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -20,7 +22,11 @@ const Hero = ({
     <Wrapper>
       <img className="background-img" src={bcg} alt="Grass" />
       <div className="waterdrop-img-container">
-        <img className="waterdrop-img" src={waterDrop} alt="Waterdrop" />
+        <img
+          className={`waterdrop-img ${!scrollPos ? "hidden" : ""}`}
+          src={waterDrop}
+          alt="Waterdrop"
+        />
       </div>
     </Wrapper>
   );
@@ -41,6 +47,9 @@ const Wrapper = styled.div`
   .logo-img {
     position: relative;
     left: 30%;
+  }
+  .hidden {
+    display: none;
   }
   .waterdrop-img-container {
     position: absolute;

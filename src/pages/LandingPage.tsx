@@ -9,7 +9,7 @@ const LandingPage = () => {
 
   return (
     <Wrapper>
-      <Hero setScrollPos={setScrollPos} />
+      <Hero setScrollPos={setScrollPos} scrollPos={scrollPos} />
       <LandingPageHydrogen scrollPos={scrollPos} />
       <LandingPageStation />
     </Wrapper>
