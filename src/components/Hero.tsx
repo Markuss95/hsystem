@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router";
 import styled from "styled-components";
 import bcg from "../assets/pexels-andre-william-2104499 (2).jpg";
 import waterDrop from "../assets/pexels-oleg-magni-2033981 (1).jpg";
@@ -12,11 +11,9 @@ const Hero = ({
   scrollPos: boolean;
 }) => {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () =>
-        setScrollPos(window.scrollY < 0.533 * window.innerHeight)
-      );
-    }
+    window.addEventListener("scroll", () =>
+      setScrollPos(window.scrollY < 0.533 * window.innerHeight)
+    );
   });
 
   return (

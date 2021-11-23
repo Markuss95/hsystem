@@ -7,7 +7,7 @@ const Contact = () => {
 const Wrapper = styled.div`
   position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   background-color: #b4bde2;
 `;
 export default Contact;

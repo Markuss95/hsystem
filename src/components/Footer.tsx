@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { useLocation } from "react-router-dom";
 const Footer = () => {
@@ -10,17 +11,25 @@ const Footer = () => {
 
   return (
     <Wrapper>
+      <div
+        className={`horisontal-line ${
+          location.pathname === "/" ? "hidden" : ""
+        }`}
+      ></div>
       <div className="background-img"></div>
       <div className="footer-content-container">
         <div className="footer-content">
           <p>Our Company</p>
           <p>Solar Energy</p>
           <p>Sustainability</p>
-          <p>Contact</p>
+          <Link to="/contact">
+            <p>Contact</p>
+          </Link>
         </div>
       </div>
       <div
-        className={`scroll-up-btn ${location.pathname === "/" ? "" : "hidden"}`}
+        // className={`scroll-up-btn ${location.pathname === "/" ? "" : "hidden"}`}
+        className="scroll-up-btn"
         onClick={topFunction}
       >
         <BsFillArrowUpCircleFill />
@@ -72,6 +81,7 @@ const Wrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 0.7rem;
+    z-index: 2;
     p {
       color: white;
     }
@@ -88,6 +98,11 @@ const Wrapper = styled.div`
     color: white;
     padding-left: 2rem;
     padding-bottom: 1rem;
+  }
+  .horisontal-line {
+    height: 0.2vh;
+    width: 100vw;
+    background-color: white;
   }
   @media screen and (max-width: 800px) {
     .footer-content {
