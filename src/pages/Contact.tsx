@@ -46,6 +46,8 @@ const Wrapper = styled.div`
   .contact-us-message {
     color: white;
     text-align: left;
+    padding-left: 1rem;
+    line-height: 2.5rem;
   }
 `;
 export default Contact;

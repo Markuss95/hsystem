@@ -61,7 +61,7 @@ const Wrapper = styled(motion.div)`
     top: 0.5rem;
     right: 5%;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     .logo-img {
       display: none;
     }
@@ -69,7 +69,7 @@ const Wrapper = styled(motion.div)`
       display: none;
     }
   }
-  @media (min-width: 801px) {
+  @media (min-width: 1001px) {
     .menu {
       display: none;
     }
