@@ -22,10 +22,7 @@ const Contact = () => {
         <h2 className="contact-us-message">
           If you have the same passion for ecology and technology.
         </h2>
-        <h2 className="contact-us-message">
-          {" "}
-          Or you just want to get to know us better...
-        </h2>{" "}
+        <h2 className="contact-us-message"> Or you just have a question...</h2>{" "}
         <h2 className="contact-us-message">
           {" "}
           Send us an email at: administration@hsystem.org
