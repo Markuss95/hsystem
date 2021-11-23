@@ -67,6 +67,9 @@ a {
   line-height: 2.6rem;
   color: #383838;
 }
+.hidden {
+  display: none;
+}
 .box-wrapper {
   position: relative;
   margin-top: 1.5rem;

@@ -21,7 +21,9 @@ const Navbar = () => {
         <h3>Our Company</h3>
         <h3>Solar Energy</h3>
         <h3>Sustainability</h3>
-        <h3>Contact</h3>
+        <Link to="/contact">
+          <h3>Contact</h3>
+        </Link>
       </div>
       <div className="menu">
         <p>Meni</p>

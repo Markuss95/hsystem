@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { useLocation } from "react-router-dom";
 const Footer = () => {
   const topFunction = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
+  const location = useLocation();
+
   return (
     <Wrapper>
       <div className="background-img"></div>
@@ -16,7 +19,10 @@ const Footer = () => {
           <p>Contact</p>
         </div>
       </div>
-      <div className="scroll-up-btn" onClick={topFunction}>
+      <div
+        className={`scroll-up-btn ${location.pathname === "/" ? "" : "hidden"}`}
+        onClick={topFunction}
+      >
         <BsFillArrowUpCircleFill />
       </div>
       <div className="footer-company-container">
