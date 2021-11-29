@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import logo from "../assets/LogoMakr-3ok5GN.png";
+import logo from "../assets/LogoMakr-54Xxu5.png";
 const navbarVariants = {
   hidden: {
     opacity: 0,
@@ -52,6 +52,7 @@ const Wrapper = styled(motion.div)`
   }
   .logo-img {
     position: relative;
+    height: 5.3rem;
     left: 30%;
   }
   .menu {
