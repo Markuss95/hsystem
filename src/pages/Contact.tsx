@@ -20,7 +20,7 @@ const Contact = () => {
         animate="visible"
       >
         <h2 className="contact-us-message">
-          If you have the same passion for ecology and technology.
+          If you have the same passion for clean energy and technology.
         </h2>
         <h2 className="contact-us-message"> Or you just have a question...</h2>{" "}
         <h2 className="contact-us-message">
