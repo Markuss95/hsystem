@@ -21,7 +21,9 @@ const Footer = () => {
         <div className="footer-content">
           <p>Our Company</p>
           <p>Solar Energy</p>
-          <p>Sustainability</p>
+          <Link to="sustainability">
+            <p>Sustainability</p>
+          </Link>
           <Link to="/contact">
             <p>Contact</p>
           </Link>

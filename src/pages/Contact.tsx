@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 const variants = {
   hidden: { opacity: 0 },
@@ -11,6 +12,9 @@ const variants = {
   },
 };
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Wrapper>
       <motion.div

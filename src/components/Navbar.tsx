@@ -20,7 +20,10 @@ const Navbar = () => {
       <div className="navbar-list">
         <h3>Our Company</h3>
         <h3>Solar Energy</h3>
-        <h3>Sustainability</h3>
+        <Link to="/sustainability">
+          <h3>Sustainability</h3>
+        </Link>
+
         <Link to="/contact">
           <h3>Contact</h3>
         </Link>
