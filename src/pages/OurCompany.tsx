@@ -71,5 +71,33 @@ const Wrapper = styled.div`
     top: 70%;
     padding-left: 12rem;
   }
+  @media (max-width: 1150px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .our-mission {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-us {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 800px) {
+    .our-mission {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+    .about-us {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+  }
 `;
 export default OurCompany;
