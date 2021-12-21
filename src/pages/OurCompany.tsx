@@ -26,7 +26,7 @@ const OurCompany = () => {
         animate="visible"
       >
         <h1>OUR MISSION</h1>
-        <p>H System's mission is production of ecologically</p>{" "}
+        <p>H System's mission is a production of ecologically</p>{" "}
         <p>neutral, reliable, energy for everyone.</p>
       </motion.div>
 
