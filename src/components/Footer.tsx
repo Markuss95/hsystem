@@ -19,7 +19,9 @@ const Footer = () => {
       <div className="background-img"></div>
       <div className="footer-content-container">
         <div className="footer-content">
-          <p>Our Company</p>
+          <Link to="/company">
+            <p>Our Company</p>
+          </Link>
           <p>Solar Energy</p>
           <Link to="sustainability">
             <p>Sustainability</p>

@@ -18,7 +18,9 @@ const Navbar = () => {
         <img className="logo-img" src={logo} alt="H System" />
       </Link>
       <div className="navbar-list">
-        <h3>Our Company</h3>
+        <Link to="/company">
+          <h3>Our Company</h3>
+        </Link>
         <h3>Solar Energy</h3>
         <Link to="/sustainability">
           <h3>Sustainability</h3>
@@ -56,7 +58,7 @@ const Wrapper = styled(motion.div)`
   .logo-img {
     position: relative;
     height: 5.3rem;
-    left: 30%;
+    left: 80%;
   }
   .menu {
     position: relative;
@@ -65,7 +67,7 @@ const Wrapper = styled(motion.div)`
     top: 0.5rem;
     right: 5%;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1150px) {
     .logo-img {
       display: none;
     }
@@ -73,7 +75,7 @@ const Wrapper = styled(motion.div)`
       display: none;
     }
   }
-  @media (min-width: 1001px) {
+  @media (min-width: 1151px) {
     .menu {
       display: none;
     }
