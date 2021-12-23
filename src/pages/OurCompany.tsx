@@ -91,12 +91,31 @@ const Wrapper = styled.div`
   }
   @media (max-width: 800px) {
     .our-mission {
-      padding-left: 8rem;
-      padding-right: 8rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      top: 15%;
+
+      h1 {
+        line-height: 3rem;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
     .about-us {
-      padding-left: 8rem;
-      padding-right: 8rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      top: 50%;
+      h1 {
+        line-height: 3rem;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   }
 `;
