@@ -93,7 +93,7 @@ const Wrapper = styled.div`
     .our-mission {
       padding-left: 5rem;
       padding-right: 5rem;
-      top: 15%;
+      top: 10%;
 
       h1 {
         line-height: 3rem;
