@@ -11,7 +11,13 @@ const navbarVariants = {
     transition: { delay: 1, duration: 1 },
   },
 };
-const Navbar = () => {
+const Navbar = ({
+  menuState,
+  setMenuState,
+}: {
+  menuState: boolean;
+  setMenuState: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   return (
     <Wrapper variants={navbarVariants} initial="hidden" animate="visible">
       <Link to="/">
@@ -25,13 +31,19 @@ const Navbar = () => {
         <Link to="/sustainability">
           <h3>Sustainability</h3>
         </Link>
-
         <Link to="/contact">
           <h3>Contact</h3>
         </Link>
       </div>
       <div className="menu">
-        <p>Meni</p>
+        <p
+          onClick={() => {
+            setMenuState(!menuState);
+          }}
+          className="menu-btn"
+        >
+          Menu
+        </p>
       </div>
     </Wrapper>
   );
@@ -66,6 +78,9 @@ const Wrapper = styled(motion.div)`
     font-size: 1.3rem;
     top: 0.5rem;
     right: 5%;
+  }
+  .menu-btn {
+    cursor: pointer;
   }
   @media (max-width: 1150px) {
     .logo-img {
