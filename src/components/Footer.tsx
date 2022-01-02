@@ -22,7 +22,10 @@ const Footer = () => {
           <Link to="/company">
             <p>Our Company</p>
           </Link>
-          <p>Solar Energy</p>
+          <Link to="/solarenergy">
+            <p>Solar Energy</p>
+          </Link>
+
           <Link to="sustainability">
             <p>Sustainability</p>
           </Link>

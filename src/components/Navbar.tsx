@@ -27,7 +27,9 @@ const Navbar = ({
         <Link to="/company">
           <h3>Our Company</h3>
         </Link>
-        <h3>Solar Energy</h3>
+        <Link to="/solarenergy">
+          <h3>Solar Energy</h3>
+        </Link>
         <Link to="/sustainability">
           <h3>Sustainability</h3>
         </Link>

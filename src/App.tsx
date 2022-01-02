@@ -8,6 +8,7 @@ import Sustainability from "./pages/Sustainability";
 import LandingPage from "./pages/LandingPage";
 import Menu from "./components/Menu";
 import OurCompany from "./pages/OurCompany";
+import SolarEnergy from "./pages/SolarEnergy";
 
 const App = () => {
   const [menuState, setMenuState] = useState(false);
@@ -22,6 +23,7 @@ const App = () => {
             <Routes>
               <Route path="" element={<LandingPage />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/solarenergy" element={<SolarEnergy />} />
               <Route path="/company" element={<OurCompany />} />
               <Route path="/sustainability" element={<Sustainability />} />
             </Routes>
