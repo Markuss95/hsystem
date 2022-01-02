@@ -34,7 +34,7 @@ const Menu = ({
         <Link to="/company" onClick={() => setMenuState(!menuState)}>
           <h3>Our Company</h3>
         </Link>
-        <Link to="/solarenergy">
+        <Link to="/solarenergy" onClick={() => setMenuState(!menuState)}>
           <h3>Solar Energy</h3>
         </Link>
         <Link to="/sustainability" onClick={() => setMenuState(!menuState)}>
