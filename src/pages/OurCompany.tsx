@@ -118,7 +118,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  @media (max-height: 600px) {
+  @media (max-height: 670px) {
     .our-mission {
       top: 5%;
       h1 {

@@ -125,7 +125,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  @media (max-height: 600px) {
+  @media (max-height: 670px) {
     .solar-power {
       top: 5%;
       h1 {
