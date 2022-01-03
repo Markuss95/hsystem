@@ -50,5 +50,10 @@ const Wrapper = styled.div`
     padding-left: 1rem;
     line-height: 2.5rem;
   }
+  @media (max-height: 670px) {
+    h2 {
+      font-size: 1rem;
+    }
+  }
 `;
 export default Contact;
