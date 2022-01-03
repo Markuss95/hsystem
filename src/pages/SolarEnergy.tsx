@@ -25,7 +25,7 @@ const SolarEnergy = () => {
         initial="hidden"
         animate="visible"
       >
-        <h1>Solar Energy</h1>
+        <h1>SOLAR ENERGY</h1>
         <p>
           The sun provides more than enough energy to meet the whole world's
         </p>
@@ -41,7 +41,7 @@ const SolarEnergy = () => {
         initial="hidden"
         animate="visible"
       >
-        <h1>Our Farm</h1>
+        <h1>OUR FARM</h1>
         <p>
           Installed on an area of over 12 hectares our power plants will be able
         </p>
@@ -100,7 +100,7 @@ const Wrapper = styled.div`
       padding-left: 5rem;
       padding-right: 5rem;
       top: 10%;
-
+      margin-top: 1rem;
       h1 {
         line-height: 3rem;
         margin-bottom: 1rem;
@@ -114,6 +114,7 @@ const Wrapper = styled.div`
       padding-left: 5rem;
       padding-right: 5rem;
       top: 50%;
+      margin-top: 1rem;
       h1 {
         line-height: 3rem;
         margin-bottom: 1rem;
@@ -121,6 +122,28 @@ const Wrapper = styled.div`
       }
       p {
         font-size: 1rem;
+      }
+    }
+  }
+  @media (max-height: 600px) {
+    .solar-power {
+      top: 5%;
+      h1 {
+        font-size: 1.1rem;
+        margin-bottom: 0rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .our-farm {
+      top: 45%;
+      h1 {
+        font-size: 1.1rem;
+        margin-bottom: 0rem;
+      }
+      p {
+        font-size: 0.8rem;
       }
     }
   }

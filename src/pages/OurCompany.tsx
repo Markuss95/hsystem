@@ -118,5 +118,27 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media (max-height: 600px) {
+    .our-mission {
+      top: 5%;
+      h1 {
+        font-size: 1.1rem;
+        margin-bottom: 0rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .about-us {
+      top: 45%;
+      h1 {
+        font-size: 1.1rem;
+        margin-bottom: 0rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
 `;
 export default OurCompany;
