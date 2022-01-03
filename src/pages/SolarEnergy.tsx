@@ -128,6 +128,7 @@ const Wrapper = styled.div`
   @media (max-height: 670px) {
     .solar-power {
       top: 5%;
+      margin-top: 0rem;
       h1 {
         font-size: 1.1rem;
         margin-bottom: 0rem;
