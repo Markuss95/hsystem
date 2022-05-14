@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { useEffect } from "react";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const variants = {
   hidden: { opacity: 0 },
@@ -30,7 +30,7 @@ const SolarEnergy = () => {
           The sun provides more than enough energy to meet the whole world's
         </p>
         <p>
-          {" "}
+          {' '}
           energy needs, and unlike fossil fuels, it won't run out anytime soon.
         </p>
       </motion.div>
@@ -43,9 +43,9 @@ const SolarEnergy = () => {
       >
         <h1>OUR FARM</h1>
         <p>
-          Installed on an area of over 12 hectares our power plants will be able
+          Installed on an area of over 20 hectares our power plants will be able
         </p>
-        <p> to generate more than 12 megawatts of electricity.</p>
+        <p> to generate more than 20 megawatts of electricity.</p>
       </motion.div>
       <div></div>
     </Wrapper>
