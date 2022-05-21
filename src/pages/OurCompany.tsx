@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { useEffect } from "react";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const variants = {
   hidden: { opacity: 0 },
@@ -26,7 +26,7 @@ const OurCompany = () => {
         animate="visible"
       >
         <h1>OUR MISSION</h1>
-        <p>H System's mission is a production of ecologically</p>{" "}
+        <p>H System's mission is a production of ecologically</p>{' '}
         <p>neutral, reliable, energy for everyone.</p>
       </motion.div>
 
