@@ -27,7 +27,7 @@ const Sustainability = () => {
         <div className="first-text">
           <h2>
             We produce the only 100% sustainable and commercially viable
-            hydrogen known also as "green hydrogen. Sustainability isn't just a
+            hydrogen known also as "green hydrogen". Sustainability isn't just a
             word we throw around, it is imperative for us all. Timelines to
             react to growing environmental challenges are getting shorter. For
             that reason, sustainability is at the center of our overall firm
